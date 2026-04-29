@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Senior Solutions Architect Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <style>
+    :root {
+      --color-bg: #ffffff;
+      --color-text: #111111;
+      --color-muted: #4f4f4f;
+      --color-surface: #f5f5f5;
+      --color-border: #d9d9d9;
+      --color-focus: #000000;
+      --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.14);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      line-height: 1.6;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      z-index: 1000;
+    }
+
+    .skip-link:focus {
+      left: 16px;
+      top: 16px;
+      width: auto;
+      height: auto;
+      padding: 10px 14px;
+      background: #ffffff;
+      color: #000000;
+      border: 2px solid #000000;
+      box-shadow: var(--shadow-soft);
+    }
+
+    nav {
+      background: #000000;
+    }
+
+    nav .brand-logo,
+    nav ul a {
+      color: #ffffff;
+      font-weight: 500;
+    }
+
+    nav .sidenav-trigger,
+    nav .material-icons {
+      color: #ffffff;
+    }
+
+    nav ul a:focus-visible,
+    .btn:focus-visible,
+    a:focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    .hero {
+      padding: 72px 0 48px;
+      border-bottom: 1px solid var(--color-border);
+      background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
+    }
+
+    .hero h1 {
+      margin-top: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #000000;
+    }
+
+    .hero .lead {
+      font-size: 1.2rem;
+      color: var(--color-muted);
+      max-width: 760px;
+    }
+
+    .hero .btn {
+      margin-top: 16px;
+      background: #000000;
+    }
+
+    .section-block {
+      padding: 56px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .section-title {
+      margin-top: 0;
+      margin-bottom: 24px;
+      font-size: 2rem;
+      color: #000000;
+      font-weight: 600;
+    }
+
+    .card,
+    .collection {
+      background: #ffffff;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-soft);
+      border-radius: 10px;
+    }
+
+    .collection .collection-item {
+      color: var(--color-text);
+      background: #ffffff;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .card .card-content .card-title {
+      color: #000000;
+      font-weight: 600;
+    }
+
+    .meta {
+      color: var(--color-muted);
+      margin-top: 0;
+    }
+
+    .experience-card {
+      margin-bottom: 24px;
+    }
+
+    .experience-meta {
+      display: block;
+      margin-bottom: 12px;
+      font-size: 0.98rem;
+    }
+
+    .experience-list {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    .experience-list li {
+      margin-bottom: 10px;
+    }
+
+    .case-study > p {
+      padding-bottom: 0.5rem;
+    }
+
+    .sidenav {
+      background: #ffffff;
+    }
+
+    .sidenav li > a {
+      color: #111111;
+      font-weight: 500;
+    }
+
+    footer {
+      background: #000000;
+      color: #ffffff;
+      padding: 20px 0;
+    }
+
+    strong {
+      color: #000000;
+      font-weight: bold;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .hero {
+        padding-top: 52px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <nav aria-label="Primary navigation">
+      <div class="nav-wrapper container">
+        <a href="#hero" class="brand-logo">Tyrone Thompson</a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger" aria-label="Open navigation menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#technical-specialty">Technical Specialty</a></li>
+          <li><a href="#leadership-skills">Leadership Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#technical-specialty">Technical Specialty</a></li>
+      <li><a href="#leadership-skills">Leadership Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#case-studies">Case Studies</a></li>
+    </ul>
+  </header>
+
+  <main id="main-content">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Bridging UI/UX Excellence with Scalable Web Architecture</h1>
+        <p class="lead">
+          Senior Solutions Architect and Lead Developer with 10+ years of experience delivering high-impact web ecosystems, leading cross-functional teams, and modernizing enterprise CMS platforms while maintaining strict WCAG accessibility standards.
+        </p>
+        <a href="#case-studies" class="btn waves-effect waves-light" aria-label="Jump to case studies">View Case Studies</a>
+      </div>
+    </section>
+
+    <section id="technical-specialty" class="section-block" aria-labelledby="technical-title">
+      <div class="container">
+        <h2 id="technical-title" class="section-title">Technical Specialty</h2>
+        <p class="meta">Comprehensive expertise across front-end development, CMS platforms, architecture, and project management for enterprise web solutions</p>
+        <div class="row">
+          <div class="col s12 m6">
+            <article class="card" aria-labelledby="tech-1-title">
+              <div class="card-content">
+                <h3 id="tech-1-title" class="card-title">Front-End</h3>
+                <p>HTML, CSS, JavaScript, TypeScript, React, Angular, jQuery, Gatsby, GTM, GA, Material UI, Bootstrap, Tailwind, and WCAG-first implementation.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col s12 m6">
+            <article class="card" aria-labelledby="tech-2-title">
+              <div class="card-content">
+                <h3 id="tech-2-title" class="card-title">CMS Expertise</h3>
+                <p>WordPress, Drupal, Webflow, Joomla, Shopify, Agility CMS, Craft CMS, Builder.io, AEM, and headless CMS migration strategy.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col s12 m6">
+            <article class="card" aria-labelledby="tech-3-title">
+              <div class="card-content">
+                <h3 id="tech-3-title" class="card-title">Architecture &amp; Backend</h3>
+                <p>GraphQL, SQL/MySQL, REST APIs, JSON, Firebase (GCP), AWS, Docker, and scalable integration patterns for enterprise web ecosystems.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col s12 m6">
+            <article class="card" aria-labelledby="tech-4-title">
+              <div class="card-content">
+                <h3 id="tech-4-title" class="card-title">Project Management</h3>
+                <p>Agile delivery, Jira workflows, estimation and timelines, stakeholder communication, cross-functional coordination, and team enablement.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership-skills" class="section-block" aria-labelledby="leadership-title">
+      <div class="container">
+        <h2 id="leadership-title" class="section-title">Leadership Skills</h2>
+        <p class="meta">Lead and management strengths demonstrated across enterprise and growth-stage teams</p>
+        <div class="row">
+          <div class="col s12 m6 l4">
+            <article class="card" aria-labelledby="lead-1-title">
+              <div class="card-content">
+                <h3 id="lead-1-title" class="card-title">Strategic Leadership</h3>
+                <p>Led architecture decisions for enterprise web modernization, including Agility CMS to Builder.io + Angular migration for large-scale marketing and application sites.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col s12 m6 l4">
+            <article class="card" aria-labelledby="lead-2-title">
+              <div class="card-content">
+                <h3 id="lead-2-title" class="card-title">Team Mentorship</h3>
+                <p>Mentored junior developers, new hires, and interns on coding standards, UI/UX principles, accessibility practices, and front-end architecture for long-term growth.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col s12 m6 l4">
+            <article class="card" aria-labelledby="lead-3-title">
+              <div class="card-content">
+                <h3 id="lead-3-title" class="card-title">Program Management</h3>
+                <p>Managed cross-functional teams, resource estimation, timelines, and training handoffs to ensure delivery continuity across contract and in-house environments.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-block" aria-labelledby="experience-title">
+      <div class="container">
+        <h2 id="experience-title" class="section-title">Experience</h2>
+        <p class="meta">Experience spanning enterprise architecture, front-end leadership, CMS modernization, and accessible web delivery. From SaaS platforms to enterprise solutions, delivering impactful web experiences in Marketing, Finance, and Education technologies.</p>
+        <div class="row">
+          <div class="col s12">
+            <article class="card experience-card" aria-labelledby="exp-1-title">
+              <div class="card-content">
+                <h3 id="exp-1-title" class="card-title">Lead Web Developer / Freelancer / Operations Manager</h3>
+                <span class="meta experience-meta">Scribbles and Sums | June 2010 – Present</span>
+                <ul class="browser-default experience-list">
+                  <li>Led a 5-member cross-functional team delivering custom web solutions for small businesses, managing estimation, resourcing, and project timelines.</li>
+                  <li>Improved website performance by 45% on average, achieving Lighthouse scores of 95+ and increasing organic reach.</li>
+                  <li>Built custom HTML, CSS, JavaScript, and PHP solutions across WordPress, Drupal, Shopify, and Webflow, with GTM, OneTrust, and Amplitude integrations.</li>
+                  <li>Mentored junior developers on UI/UX best practices and scalable front-end architecture.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="col s12">
+            <article class="card experience-card" aria-labelledby="exp-2-title">
+              <div class="card-content">
+                <h3 id="exp-2-title" class="card-title">Senior Solutions Architect / CMS Consultant</h3>
+                <span class="meta experience-meta">OCAS | March 2025 – March 2026 | Contract</span>
+                <ul class="browser-default experience-list">
+                  <li>Served as architecture lead for the migration from Agility CMS to Builder.io and Angular, implementing a headless CMS model for marketing and application sites.</li>
+                  <li>Rebuilt complex partner sites in WordPress to improve self-service publishing and automation, reducing content changes from full development cycles to minutes.</li>
+                  <li>Built interactive components for WordPress and Builder.io using PHP, Angular, and Tailwind, aligned with modern front-end best practices.</li>
+                  <li>Created training materials to support long-term knowledge transfer for marketing and development teams.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="col s12">
+            <article class="card experience-card" aria-labelledby="exp-3-title">
+              <div class="card-content">
+                <h3 id="exp-3-title" class="card-title">Senior Lead Web and Front-End Angular Developer</h3>
+                <span class="meta experience-meta">Lullaboo Nursery &amp; Childcare Centers Inc | January 2024 – March 2025 | Project Based Work</span>
+                <ul class="browser-default experience-list">
+                  <li>Directed the full-scale redevelopment of the corporate website using WordPress, FileMaker APIs, and Material Design principles.</li>
+                  <li>Architected a custom Angular/TypeScript staff portal for 1,000+ employees, integrating Power Automate and Firebase for real-time center activity data.</li>
+                  <li>Improved marketing site performance and Lighthouse scores across all major metrics within three months.</li>
+                  <li>Upskilled new hires and interns on coding standards, design principles, and proprietary system architecture.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="col s12">
+            <article class="card experience-card" aria-labelledby="exp-4-title">
+              <div class="card-content">
+                <h3 id="exp-4-title" class="card-title">Lead Marketing Web Developer</h3>
+                <span class="meta experience-meta">Moves | April 2023 – October 2023 | Project Based Work</span>
+                <ul class="browser-default experience-list">
+                  <li>Increased web traffic by 150% and conversions by 30% through SEO, schema markup, image optimization, and UX improvements.</li>
+                  <li>Managed complex marketing integrations across Braze, Amplitude, Segment, and Branch to improve analytics and attribution.</li>
+                  <li>Established WCAG accessibility standards for the marketing department and trained the team on implementation best practices.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="col s12">
+            <article class="card experience-card" aria-labelledby="exp-5-title">
+              <div class="card-content">
+                <h3 id="exp-5-title" class="card-title">Lead UX Front-End Developer</h3>
+                <span class="meta experience-meta">AB InBev (Anheuser-Busch, Labatt) | June 2022 – April 2023 | Project Based Work</span>
+                <ul class="browser-default experience-list">
+                  <li>Led UI/UX development for a high-traffic loyalty and rewards platform built with React and Builder.io.</li>
+                  <li>Reduced development cycles by replacing heavy video and JavaScript assets with optimized CSS animation patterns.</li>
+                  <li>Ensured ADA and WCAG compliance across North American web properties.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="col s12">
+            <article class="card experience-card" aria-labelledby="exp-6-title">
+              <div class="card-content">
+                <h3 id="exp-6-title" class="card-title">Senior Web Developer</h3>
+                <span class="meta experience-meta">Wave Financial | July 2020 – June 2022 | Full-Time</span>
+                <ul class="browser-default experience-list">
+                  <li>Built custom, WCAG AA-compliant user interfaces using React, PHP, JavaScript, HTML5, CSS3, and Figma.</li>
+                  <li>Improved performance by resolving Craft CMS issues, supporting a migration to Webflow, and contributing to architecture and UX decisions across React-based experiences.</li>
+                  <li>Mentored junior developers and new hires on marketing-site architecture and environment setup practices, including Docker fundamentals.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="col s12">
+            <article class="card experience-card" aria-labelledby="exp-7-title">
+              <div class="card-content">
+                <h3 id="exp-7-title" class="card-title">Front-End Web Developer</h3>
+                <span class="meta experience-meta">CST Consultants | October 2019 – July 2020 | Contract</span>
+                <ul class="browser-default experience-list">
+                  <li>Built custom user interfaces using React, PHP, JavaScript, HTML, and CSS for client-facing digital experiences.</li>
+                  <li>Resolved issues in a custom AEM build and used Git, Bitbucket, and Jira to track defects, manage features, and support code reviews.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="col s12">
+            <article class="card experience-card" aria-labelledby="exp-8-title">
+              <div class="card-content">
+                <h3 id="exp-8-title" class="card-title">Intermediate Web Developer</h3>
+                <span class="meta experience-meta">Art Gallery of Ontario | September 2015 – October 2019 | Full-Time</span>
+                <ul class="browser-default experience-list">
+                  <li>Served as technical lead for the digital team, overseeing Drupal-based projects and progressive web application development.</li>
+                  <li>Modernized the stack by introducing React, Angular, and Gatsby for high-performance gallery applications and headless CMS operations.</li>
+                  <li>Implemented backend Git syncing and W3C accessibility features for archival systems.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="col s12">
+            <article class="card experience-card" aria-labelledby="exp-9-title">
+              <div class="card-content">
+                <h3 id="exp-9-title" class="card-title">Web Developer</h3>
+                <span class="meta experience-meta">March of Dimes Canada | January 2013 – August 2015 | Full-Time</span>
+                <ul class="browser-default experience-list">
+                  <li>Spearheaded the organization’s first mobile-responsive website, significantly improving accessibility for users with disabilities.</li>
+                  <li>Developed SharePoint web parts and templates to streamline internal communication and intranet functionality.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="col s12">
+            <article class="card experience-card" aria-labelledby="exp-10-title">
+              <div class="card-content">
+                <h3 id="exp-10-title" class="card-title">Web / Configuration Developer</h3>
+                <span class="meta experience-meta">Intelex Technologies Inc | August 2010 – October 2012 | Full-Time</span>
+                <ul class="browser-default experience-list">
+                  <li>Built custom EHS software modules for enterprise clients using ASP.NET, jQuery, and XML in an Agile environment.</li>
+                  <li>Configured and deployed complex applications directly to client sites, ensuring seamless integration with existing systems.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="case-studies" class="section-block" aria-labelledby="case-title">
+      <div class="container">
+        <h2 id="case-title" class="section-title">Case Studies</h2>
+        <div class="row">
+          <div class="col s12 m6 l4">
+            <article class="card" aria-labelledby="case-1-title">
+              <div class="card-content case-study">
+                <h3 id="case-1-title" class="card-title">OCAS: Headless CMS Transformation</h3>
+                <p><strong>Challenge:</strong> Marketing and application sites needed faster publishing and stronger scalability.</p>
+                <p><strong>Approach:</strong> Led Agility CMS migration to Builder.io with Angular headless architecture and rebuilt complex partner properties in WordPress.</p>
+                <p><strong>Outcome:</strong> Content updates shifted from full development cycles to minute-level changes with better team self-management.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col s12 m6 l4">
+            <article class="card" aria-labelledby="case-2-title">
+              <div class="card-content case-study">
+                <h3 id="case-2-title" class="card-title">Moves: Growth and Conversion Optimization</h3>
+                <p><strong>Challenge:</strong> Needed measurable uplift in discoverability and conversion performance.</p>
+                <p><strong>Approach:</strong> Executed aggressive SEO and UX enhancements, including schema and image optimization with advanced marketing integrations.</p>
+                <p><strong>Outcome:</strong> Increased web traffic by 150% and improved conversions by 30%.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col s12 m6 l4">
+            <article class="card" aria-labelledby="case-3-title">
+              <div class="card-content case-study">
+                <h3 id="case-3-title" class="card-title">Lullaboo: Enterprise Staff Portal Architecture</h3>
+                <p><strong>Challenge:</strong> Organization required a scalable internal platform supporting 1,000+ employees.</p>
+                <p><strong>Approach:</strong> Architected Angular/TypeScript portal integrated with Power Automate and Firebase for real-time center activity data.</p>
+                <p><strong>Outcome:</strong> Delivered a modern operational portal while simultaneously improving corporate site web vitals within three months.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Tyrone Thompson | Senior Solutions Architect Portfolio</p>
+    </div>
+  </footer>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var sidenavElements = document.querySelectorAll(".sidenav");
+      M.Sidenav.init(sidenavElements);
+    });
+  </script>
+</body>
+</html>

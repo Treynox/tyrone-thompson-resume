@@ -1,0 +1,47 @@
+Portfolio Page Planning Notes (Resume-Populated Version)
+
+Objective
+- Convert the single-page portfolio into an online resume grounded in resume.txt content.
+- Keep Materialize CSS CDN implementation for simplicity and maintainability.
+- Preserve accessibility and monochrome design constraints.
+
+Content Strategy Implemented
+1) Hero Positioning
+- Headline reframed to emphasize the core differentiator: bridging UI/UX excellence with scalable web architecture.
+- Supporting copy uses resume-validated experience: 10+ years, team leadership, CMS modernization, and WCAG compliance.
+
+2) Technical Specialty (Grouped Skills)
+- Skills are grouped exactly into:
+  - Front-End
+  - CMS Expertise
+  - Architecture & Backend
+  - Project Management
+- Each group includes resume-derived technologies and delivery capabilities only.
+
+3) Leadership Skills
+- Leadership cards now reflect real management achievements from the resume:
+  - Enterprise architecture leadership
+  - Team mentorship and enablement
+  - Program and delivery management
+
+4) Case Studies (Named)
+- Replaced generic placeholders with resume-based examples:
+  - OCAS: Headless CMS Transformation
+  - Moves: Growth and Conversion Optimization
+  - Lullaboo: Enterprise Staff Portal Architecture
+- Each case uses Challenge / Approach / Outcome for executive readability.
+
+Accessibility and UX Decisions
+- Maintained semantic landmarks (header, nav, main, section, footer).
+- Retained skip-link behavior and visible keyboard focus indicators.
+- Preserved heading hierarchy for screen-reader and SEO clarity.
+- Kept high contrast in all key text and interactive elements.
+
+Design Constraints Preserved
+- Palette remains black/white/gray only.
+- Existing responsive Materialize grid retained.
+- Existing shadow and border system retained for visual depth.
+
+Files Updated
+- index.html
+- portfolio-plan.txt
